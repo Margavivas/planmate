@@ -1,0 +1,134 @@
+
+.principalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.signInContainer{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: easyIn 0.8s ease-in-out;
+  }
+  .titleContainer, .signInInfo{
+    width: 75%;
+  }
+  .light{
+    color: var(--light-pink);
+    font-size: var(--title);
+  }
+  .extraBold{
+    margin-top: -8%;
+    color: var(--white);
+    font-size: var(--title);
+  }
+  .signInInfo{
+    z-index: 2;
+  }
+  .demiBold {
+    color: var(--dark-blue);
+  }
+  .question{
+    color: var(--light-pink) !important;
+    font-family: var(--font-extra-bold);
+    margin-bottom: -3%;
+  }
+  .content{
+    color: var(  --light-blue);
+  }
+  .passwordContainer{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .formInfo>span>input{
+    width: 85%;
+    height: 20%;
+    margin-top: 5%;
+  }
+
+  label{
+    font-size: var(--content);
+    color: var(--dark-blue);
+  }
+
+  .formSignIn{
+    width: 100%;
+    height: fit-content;
+    margin-top: -20%;
+    z-index: 1;
+    background-image: url(../../../assets/images/signInBG.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-size: 100%; */
+    padding-top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position-x: center;
+  }
+
+  .formInfo{
+    width: 70%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    /* border: solid blue 1px; */
+  }
+
+  .formInfo>button{
+    margin-top: 10%;
+    display: flex;
+    align-self: center;
+  }
+
+  .formSignIn>.noAccount{
+    margin-top: 52%;
+    width: 75%;
+    height: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-blue);
+    gap: 5%;
+    align-self: end;
+    font-size: 0.9em;
+    /* border: solid red 1px; */
+  }
+
+  .noAccount>a{
+    color: var(--lime-green);
+    font-family: var(--font-extra-bold);
+  }
+
+  .logo{
+    animation: rotate 10s linear infinite;
+    position: relative;
+    top: 3%;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes easyIn {
+    0% {
+      opacity: 0%;
+      transform: translateY(10%);
+    }
+    100% {
+        opacity: 100%;
+      transform: translateY(0%);
+    }
+  }

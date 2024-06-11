@@ -1,0 +1,127 @@
+
+.principalContainer{
+    background-color: var(--lime-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .singUpContainer{
+    position: relative;
+    width: 80%;
+    height: fit-content;
+    /* border: solid red 1px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: easyIn 0.8s ease-in-out;
+  }
+  
+  .signUpInfo{
+    width: 68%;
+    z-index: 2;
+  }
+  .content{
+    color: var(  --light-blue);
+  }
+  .demiBold {
+      color: var(--dark-blue);
+    }
+  
+  .formSignUp{
+    width: 100%;
+      height: fit-content;
+      margin-top: -20%;
+      z-index: 1;
+      background-image: url(../../../assets/images/signUpBG.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      /* background-size: 100%; */
+      padding-top: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* border: solid green 1px; */
+  }
+  
+  .formInfo{
+      width: 70%;
+      height: 45%;
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+      /* border: solid blue 1px; */
+    }
+  
+    input{
+      margin-bottom: 1%;
+      color: var(--light-gray) !important;
+    }
+    
+    .formInfo>button{
+      margin-top: 5%;
+      display: flex;
+      align-self: center;
+    }
+    .permissions{
+      width: 80%;
+      margin-top: 25%;
+      font-size: var(--content);
+      color: var(--light-gray);
+      line-height: 1.2em;
+      opacity: 80%;
+    }
+    svg{
+      margin-top: 10%;
+    }
+    .haveAccount>a{
+      color: var(--light-pink);
+      font-family: var(--font-extra-bold);
+    }
+    .formSignUp>.haveAccount{
+      width: 75%;
+      height: 14%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--light-gray);
+      gap: 5%;
+      align-self: end;
+      font-size: 0.9em;
+      /* border: solid red 1px; */
+    }
+  
+    .logo{
+      position: absolute;
+      z-index: 5;
+      top: -10%;
+      right: 20%;
+      animation: rotate 15s linear infinite;
+    }
+    circle, path {
+      fill: var(--light-purple)
+    }
+
+    label.content{
+      color: var(--white);
+    }
+    
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes easyIn {
+        0% {
+          opacity: 0%;
+          transform: translateY(10%);
+        }
+        100% {
+            opacity: 100%;
+          transform: translateY(0%);
+        }
+      }
+  

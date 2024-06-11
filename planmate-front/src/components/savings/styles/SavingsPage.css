@@ -1,0 +1,185 @@
+.principalContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10%;
+    /* border: solid red 1px; */
+    /* padding: 5%; */
+  }
+  .savingsPageContainer{
+    /* border: pink solid 1px; */
+    width: 90%;
+  }
+  h1.extraBold{
+    color: var( --light-gray);
+    margin-bottom: 0px;
+    margin-top: 15%;
+  }
+  h3.demiBold{
+    color: var( --light-pink);
+    margin-bottom: 0px;
+  }
+  .content{
+    color: var(--light-gray);
+}
+.result{
+  width: max-content;
+  min-width: 30%;
+  padding: 5%;
+}
+.correct{
+  transition: all 1s;
+  background-color: var(--lime-green);
+  border-radius: var(--border-radius);
+}
+
+.incorrect{
+  background-color: var(--light-pink);
+  text-decoration: line-through;
+  border-radius: var(--border-radius);
+}
+  .quantity{
+    /* border:solid green 1px; */
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  .jarsContainer{
+    margin-top: 5%;
+    /* border: solid yellow 1px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .jarsContainer>div{
+    margin-top: 5%;
+    padding: 2%;
+    background-color: var(--light-blue);
+    border-radius: var(--border-radius);
+    width: calc(100% / 3.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .jarInput{
+    width: 50%;
+  }
+  .jarsContainer>div>input{
+    background-color: var(--dark-blue);
+  }
+
+  .loadSavingsContainer{
+    margin-top: 15%;
+    /* border: solid 1px red; */
+  }
+
+  /*Savings  Hub*/
+.dropSavings{
+    width: 100%;
+    /* border: solid blue 1px; */
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    gap: 5%;
+    margin-bottom: 30%;
+}
+
+.savings{
+    /* border: solid red 1px; */
+    background: url('../../../assets/images/savingsBg2.svg') no-repeat center center;
+    background-size: contain;
+    width: 43%;
+    margin-top: 5%;
+    /* border: solid red 1px; */
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    /* transition: all 0.5s; */
+}
+.savingName.demiBold{
+    color: var(--dark-blue);
+    /* border: solid red 1px; */
+    width: 63%;
+    text-align: center;
+    position: relative;
+    top: -15%;
+}
+/* .savingContent{
+    border: solid 1px green;
+    display: flex;
+} */
+.saving{
+    width: 100%;
+    /* border: solid purple 1px; */
+    display: flex;
+    gap: 5%;
+    position: relative;
+    top: -20%;
+}
+.savingGraphic{
+    width: 45%;
+    height: auto;
+    /* border: solid 1px pink; */
+}
+.savingContent{
+    width: 45%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* border: solid 1px black; */
+}
+.savingAmount.demiBold{
+    color: var(--light-purple);
+    font-size: var(--content);
+    padding: 0%;
+    margin: 0%;
+}
+.savingGoal{
+    padding: 0%;
+    margin: 0%;
+    color: var(--dark-blue);
+    font-size: var( --content);
+}
+.donut{
+    margin-left: 30%;
+}
+.savingDeadLine.content{
+    position: absolute;
+    top: 95%;
+    left: 30%;
+    color: var(--dark-blue);
+    opacity: 50%;
+    /* border: solid red 1px; */
+}
+.editSavings{
+    position: absolute;
+    left: 60%;
+    /* background-color: var(--light-pink); */
+}
+.createSaving{
+    background-color: var(--light-pink);
+    position:fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    top: 90vh;
+    z-index: 9999;
+    background-image: url('../../../assets/images/savingsImage/mas.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+img{
+  width: 80%;
+}
+

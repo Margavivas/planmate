@@ -1,0 +1,255 @@
+.principalContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+  }
+.userInfo{
+    background-color: var(--white);
+    padding-bottom: 1%;
+    z-index: 1;
+    padding: 5%;
+    /* border: solid red 1px; */
+}
+.userContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%; 
+}
+.hello{
+    color: var(--light-blue);
+    margin: 0%;
+    margin-bottom: 1%;
+
+}
+.userName.demiBold{
+    color: var(--dark-blue);
+    margin: 0%;
+}
+.extraBold{
+    color: var(--dark-blue);
+    font-size: var(--subTitle);
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.dashboardContainer{
+    background-color: var(--dark-blue);
+    border-radius: 50px 50px 0px 0px;
+    z-index: 2;
+    margin-top: -11%;
+    padding-top: 1%;
+    padding: 5%;
+    padding-bottom: 20%;
+ 
+}
+.demiBold{
+    color: var( --light-gray);
+}
+
+/*Savings  Hub*/
+.dropSavings{
+    width: 100%;
+    /* border: solid blue 1px; */
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    gap: 5%;
+}
+/* .dropSavings{
+    
+    width: 100%;
+    
+    display: flex;
+} */
+.savings{
+    /* border: solid red 1px; */
+    background: url('../assets/images/savingsBg2.svg') no-repeat center center;
+    background-size: contain;
+    width: 42%;
+    margin-top: 5%;
+    /* border: solid red 1px; */
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* transition: all 0.5s; */
+}
+.savingName.demiBold{
+    color: var(--dark-blue);
+    /* border: solid red 1px; */
+    width: 63%;
+    text-align: center;
+    position: relative;
+    top: -15%;
+}
+/* .savingContent{
+    border: solid 1px green;
+    display: flex;
+} */
+.saving{
+    width: 100%;
+    /* border: solid purple 1px; */
+    display: flex;
+    gap: 5%;
+    position: relative;
+    top: -15%;
+}
+.savingGraphic{
+    width: 45%;
+    height: auto;
+    /* border: solid 1px pink; */
+}
+.savingContent{
+    width: 45%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* border: solid 1px black; */
+}
+.savingAmount.demiBold{
+    color: var(--light-purple);
+    font-size: var(--content);
+    padding: 0%;
+    margin: 0%;
+}
+.savingGoal{
+    padding: 0%;
+    margin: 0%;
+    color: var(--dark-blue);
+    font-size: var( --content);
+}
+.donut{
+    margin-left: 30%;
+}
+
+/* Priority Planner */
+.plannerContainer{
+    margin-top: 50px;
+}
+
+.taskContainer{
+    background-color: var(--light-blue);
+    border-radius: var( --border-radius);
+    margin-bottom: 10px;
+    padding: 2%;
+}
+.task{
+    width: 100%;
+    /* border: solid red 1px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.taskStatus{
+    /* border: solid red 1px; */
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    
+}
+.taskName, .taskDescription, .taskDate{
+    margin: 0px;
+    color: var(--light-gray);
+}
+.taskDate{
+    align-self: flex-start;
+}
+.taskDescription{
+    opacity: 80%;
+}
+
+.taskInfo{
+    /* border: solid red 1px; */
+    width: 65%;
+}
+
+/* Thought Repository */
+.notesContainer{
+    margin-top: 50px;
+}
+
+.noteContainer{
+    /* border: solid blue 1px; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.notes{
+    /* border: solid red 1px; */
+    background: url('../assets/images/notesBg.svg') no-repeat center center;
+    background-size: contain;
+    width: 38%;
+    height: 170px;
+    margin-top: 5%;
+    /* border: solid red 1px; */
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* transition: all 0.5s; */
+}
+.noteTitle{
+    width: 75%;
+    height: 20%;
+    /* border: solid blue 1px; */
+    position: relative;
+    top: -8%;
+    /* text-align: center; */
+}
+.excerpt{
+    width: 100%;
+    height: 80%;
+    /* border: solid green 1px; */
+    position: relative;
+    top: -15%;
+}
+
+.noteFooter{
+    width: 100%;
+    height: 20%;
+    /* border: solid red 1px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+}
+.noteDate{
+    margin: 0px;   
+}
+.editNote{
+    width: 30px;
+    height: 39px;
+    background-color: var(--dark-blue);
+    border-radius: 100px;
+    color: var(--white);
+    text-align: center;
+    background-image: url('../assets/images/edit.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.noteTitle.demiBold{
+    color: var(--dark-blue);
+}
+/* .navContainer {
+    position: fixed; 
+    z-index: 999;
+    top: 93%; 
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+
+} */

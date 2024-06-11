@@ -1,0 +1,109 @@
+.principalContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10%;
+    /* border: solid red 1px; */
+    /* padding: 5%; */
+  }
+  .notesPageContainer{
+    width: 90%;
+    /* border: solid red 1px; */
+  }
+  .titleNotes {
+    width: 90%;
+}
+  h1.extraBold{
+    color: var( --light-gray);
+    margin-bottom: 0px;
+    margin-top: 15%;
+    /* border: solid red 1px; */
+    
+  }
+  .notesContainer{
+    margin-top: 50px;
+}
+
+.notesContainer{
+    /* border: solid blue 1px; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.notes{
+    /* border: solid red 1px; */
+    background: url('../../../assets/images/notesBg.svg') no-repeat center center;
+    background-size: contain;
+    width: 38%;
+    height: 170px;
+    margin-top: 5%;
+    /* border: solid red 1px; */
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* transition: all 0.5s; */
+}
+.noteTitle{
+    width: 75%;
+    height: 20%;
+    /* border: solid blue 1px; */
+    position: relative;
+    top: -8%;
+    /* text-align: center; */
+}
+.excerpt{
+    width: 100%;
+    height: 80%;
+    /* border: solid green 1px; */
+    position: relative;
+    top: -15%;
+}
+
+.noteFooter{
+    width: 100%;
+    height: 20%;
+    /* border: solid red 1px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+}
+.noteDate{
+    margin: 0px;   
+}
+.editNote{
+    width: 30px;
+    height: 39px;
+    background-color: var(--dark-blue);
+    border-radius: 100px;
+    color: var(--white);
+    text-align: center;
+    background-image: url('../../../assets/images/edit.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.noteTitle.demiBold{
+    color: var(--dark-blue);
+}
+  
+.createNote{
+    background-color: var(--light-pink);
+    position:fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    top: 90vh;
+    z-index: 9999;
+    background-image: url('../../../assets/images/savingsImage/mas.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+

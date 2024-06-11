@@ -1,0 +1,144 @@
+  /*fonts*/
+  @font-face {
+    font-family: 'light';
+    src: url('./assets/fonts/Fontspring-DEMO-visbycf-light.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'demi-bold';
+    src: url('./assets/fonts/Fontspring-DEMO-visbycf-demibold.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'extra-bold';
+    src: url('./assets/fonts/Fontspring-DEMO-visbycf-extrabold.otf') format('opentype');
+  }
+
+:root {
+  /*color palette*/
+  --lime-green: #E9FC88;
+  --light-purple: #BCB4FF;
+  --light-pink: #EDB4F8;
+
+  --white: #fff;
+  --light-gray: #F5F5F5;
+
+  --dark-blue: #2A2C39;
+  --light-blue: #585C75;
+
+  --text-color: rgba(42, 44, 57, 0.60);
+
+  /*fonts*/
+  --font-light: 'light';
+  --font-demi-bold: 'demi-bold';
+  --font-extra-bold: 'extra-bold';
+  --title: 2em;
+  --subTitle: 1.5em;
+  --content: 0.8em;
+  --numbers: 1em;
+  --miniTitle: 1em;
+
+  /*styling*/
+  --border-radius: 12px;
+}
+
+
+/*
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+button {
+  width: fit-content;
+  border-radius: var(--border-radius);
+  color: var(--dark-blue);
+  border: 0px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  transition: background-color 0.25s;
+  background-color: var(--lime-green);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--light-pink);
+}
+
+
+.card{
+  padding: 5%;
+  border-radius: var(--border-radius);
+  background-color: var(--light-gray);
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+}
+
+input{
+  font-family: inherit;
+  padding: 0.9em 1.2em;
+  /* padding-left: 5%; */
+  border: 0px;
+  border-radius: var(--border-radius);
+  background-color: var(--light-blue);
+  color: var(--light-gray);
+  transition: border 0.25s;
+}
+
+input:focus{
+  border: var(--lime-green) solid 1px;
+}
+
+/*font management*/
+.extraBold{
+font-family: var( --font-extra-bold);
+}
+.demiBold{
+  font-family: var( --font-demi-bold);
+  }
+.light{
+  font-family: var( --font-light);
+  }
+.content{
+  font-size: var(--content);
+}
+
+/*principal container*/
+.principalContainer {
+  max-width:  450px;
+  width: 100vw;
+  min-width:  300px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  font-family: var( --font-light);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer{
+  position: fixed; 
+  z-index: 999;
+  top: 93vh; 
+  max-width: 100%;
+  display: flex;
+  justify-content: center; 
+}

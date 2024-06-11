@@ -1,0 +1,158 @@
+.principalContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10%;
+    /* // border: solid red 1px; */
+    padding-top: 5%;
+    /* // padding: 5%;  */
+  }
+  .EditNotesContainer{
+    width: 90%;
+    /* // border: solid red 1px; */
+  }
+  .noteContainerCreation{
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius);
+    padding: 2%;
+    margin-top: 80%;
+
+  }
+
+  /* buttons */
+  .buttonsPannel{
+    width: 86%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    /* border: solid red 1px; */
+    padding: 2%;
+    gap: 2%;
+    position: fixed;
+    background-color: var( --dark-blue);
+    z-index: 9;
+  }
+
+    /* modal */
+    .modal{
+      width: 80%;
+      padding: 5%;
+      position: absolute;
+      z-index: 999;
+      background-color: var(--light-gray);
+      border-radius: var(--border-radius);
+  }
+
+  .black{
+    background-image: url("../../../assets/images/noteImages/bold.png");
+  }
+  .italic{
+    background-image: url("../../../assets/images/noteImages/italic-font.png");
+  }
+  .strike{
+    background-image: url("../../../assets/images/noteImages/line.png");
+    background-size: 35.5%;
+  }
+  .paragraph{
+    background-image: url("../../../assets/images/noteImages/justified.png");
+    background-size: 40%;
+  }
+  .bullet{
+    background-image: url("../../../assets/images/noteImages/list.png");
+  }
+  .numberedList{
+    background-image: url("../../../assets/images/noteImages/listNumbered.png");
+  }
+  .code{
+    background-image: url("../../../assets/images/noteImages/code.png");
+    background-size: 45%;
+  }
+  .quote{
+    background-image: url("../../../assets/images/noteImages/quote.png");
+  }
+  .line{
+    background-image: url("../../../assets/images/noteImages/minus.png");
+  }
+  .enter{
+    background-image: url("../../../assets/images/noteImages/enter.png");
+  }
+  .undo{
+    background-size: 40%;
+    background-image: url("../../../assets/images/noteImages/undo.png");
+  }
+  .redo{
+    background-size: 40%;
+    background-image: url("../../../assets/images/noteImages/redo.png");
+  }
+  button{
+    width: fit-content;
+    min-width: 45px;
+    height: 45px;
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 4%;
+    margin-bottom: 2%;
+    background-color: var(--light-gray);
+  }
+  button:active{
+    background-color: var(--light-pink);
+  }
+  .back{
+    background-color: var(--light-purple);
+  }
+  .back:hover{
+    background-color: var(--light-pink);
+  }
+  .saveNote{
+    background-color: var(--lime-green);
+  }
+
+  .saveNote:hover{
+    background-color: var(--light-pink);
+  }
+  .inputGroup{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+  }
+  label{
+    margin-bottom: 2%;
+    color: var(--light-gray);
+  }
+  .demiBold{
+    color: var(--dark-blue);
+    /* margin-bottom: 8%; */
+  }
+  .content {
+    color: var(--dark-blue);
+    width: 80%;
+  }
+  p.content{
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 10%;
+  }
+  .buttons{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .save{
+    background-color: var(--light-pink);
+  }
+  .save:hover{
+    background-color: var(--lime-green);
+  }
+  .cancel{
+    background-color: var(--light-purple);
+  }
+  .cancel:hover{
+    background-color: var(--light-pink);
+  }
+  textarea{
+    border-radius: var(--border-radius);
+  }

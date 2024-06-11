@@ -1,0 +1,49 @@
+.principalContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10%;
+    /* border: solid red 1px; */
+    /* padding: 5%; */
+  }
+
+  .inputGroup{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+  }
+  label{
+    margin-bottom: 2%;
+    color: var(--light-gray);
+  }
+  .demiBold{
+    color: var(--light-pink);
+    margin-bottom: 3%;
+  }
+  .content {
+    color: var(--light-gray);
+    width: 80%;
+  }
+  p.content{
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 10%;
+  }
+  .buttons{
+    display: flex;
+    justify-content: space-around;
+  }
+  .back{
+    position: relative;
+    background-color: var(--light-purple);
+  }
+  .back:hover{
+    background-color: var(--light-pink);
+  }
+
+  textarea{
+    border-radius: var(--border-radius);
+    height: 100px;
+  }
