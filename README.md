@@ -8,6 +8,7 @@
 ![CSS3](https://img.shields.io/badge/CSS3-blue)
 ![Laravel](https://img.shields.io/badge/Laravel-red)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-blue)
+![Figma](https://img.shields.io/badge/Figma-purple)
 
 ## Description
 
